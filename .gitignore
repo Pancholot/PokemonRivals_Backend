@@ -1,0 +1,13 @@
+# Archivos de Python
+__pycache__/
+*.pyc
+.ipynb_checkpoints
+
+# Credenciales y entornos
+.env
+
+# Dependencias de Python (si usas un entorno virtual)
+.venv/
+venv/
+
+*.sql
