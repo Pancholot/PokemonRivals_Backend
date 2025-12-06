@@ -91,7 +91,10 @@ def login():
             },
         )
         session.commit()
-        return jsonify({"access_token": access_token}), 200
+        return (
+            jsonify({"message": "congratulations", "access_token": access_token}),
+            200,
+        )
 
     except Exception as e:
         return jsonify({"message": str(e)}), 400
