@@ -92,7 +92,9 @@ def login():
         )
         session.commit()
         return (
-            jsonify({"message": "congratulations", "access_token": access_token}),
+            jsonify(
+                {"message": "Bienvenido a Pokemon Rivals", "access_token": access_token}
+            ),
             200,
         )
 
